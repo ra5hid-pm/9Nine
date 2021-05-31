@@ -5,11 +5,19 @@ from IPython.display import display, Math, Latex
  #display(Math(r'\ce{H2O}'))  
 
 class mixque():
-   # q1 = ("Q-1. What is mixture?", "A. Composition of more than one substance", "B. Composition of more than two substance ", "C. Composition of more than three substance ", "D. Composition of at least substance")
-    q1 = ("Q-1. What is mixture?", "A. Composition of more than one substance", "B. Composition of more than two substance ", "C. Composition of more than three substance ", "D. Composition of at least one substance")
-    q2 = 'Q-2. State the typs of mixture.'
+    def __init__():
+    return pass
+    q1 = ("Q-1. What is mixture?", 
+          "A. Composition of more than one substance", 
+          "B. Composition of more than two substance ", 
+          "C. Composition of more than three substance ", 
+          "D. Composition of at least one substance")
+    q2 = 'Q-2. State the typs of mixture -',
+          "A. Homogeneous", 
+          "B. Hetrogeneous " 
+          )
     
-    def printq1():
+    def printque(x):
         
         for x in mixque.q1:
             print(x)
