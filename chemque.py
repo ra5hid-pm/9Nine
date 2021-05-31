@@ -6,21 +6,25 @@ from IPython.display import display, Math, Latex
 
 class mixque():
     def __init__():
-    return pass
-    q1 = ("Q-1. What is mixture?", 
-          "A. Composition of more than one substance", 
-          "B. Composition of more than two substance ", 
-          "C. Composition of more than three substance ", 
-          "D. Composition of at least one substance")
-    q2 = 'Q-2. State the types of mixture -',
-          "A. Homogeneous", 
-          "B. Hetrogeneous " 
-          )
+        pass
+    def queLatex():
+        return display(Math(r'\ce{H2O}')) 
     
-    def printque(x):
+    q1 = {"Q-1. " : "What is mixture?", 
+          "  A. " : "Composition of more than one substance", 
+          "  B. " : "Composition of more than two substance ", 
+          "  C. " : "Composition of more than three substance ", 
+          "  D. " : queLatex() 
+         }
+    q2 = {"Q-2. " : "State the types of mixture -",
+          "  A. " : "Homogeneous", 
+          "  B. " : "Hetrogeneous " 
+         }
+    
+    def printque():
         
         for x in mixque.q1:
-            print(x)
+            print(f'{x}{mixque.q1[x]}')
        
         
     def mixans(x):
@@ -29,7 +33,3 @@ class mixque():
             print ("Correct")
         else:
             print("Not correct")
-   
-    def queLatex():
-             
-        return display(Math(r'\ce{H2O}')) 
