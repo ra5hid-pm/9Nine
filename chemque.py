@@ -12,7 +12,7 @@ class mixque():
           "B. Composition of more than two substance ", 
           "C. Composition of more than three substance ", 
           "D. Composition of at least one substance")
-    q2 = 'Q-2. State the typs of mixture -',
+    q2 = 'Q-2. State the types of mixture -',
           "A. Homogeneous", 
           "B. Hetrogeneous " 
           )
