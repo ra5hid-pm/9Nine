@@ -26,3 +26,56 @@
 [I 09:53:20.193 NotebookApp] New terminal with automatic name: 1
 TermSocket.open: 1
 TermSocket.open: Opened 1
+[W 10:28:35.555 NotebookApp] 400 GET /user/ra5hid-pm-9nine-n2kguemb/api/contents/chemque.ipynb?type=notebook&_=1622543391348 (112.133.233.141): Unreadable Notebook: /home/jovyan/chemque.ipynb FileNotFoundError(2, 'No such file or directory')
+[W 10:28:35.559 NotebookApp] Unreadable Notebook: /home/jovyan/chemque.ipynb FileNotFoundError(2, 'No such file or directory')
+[W 10:28:35.560 NotebookApp] 400 GET /user/ra5hid-pm-9nine-n2kguemb/api/contents/chemque.ipynb?type=notebook&_=1622543391348 (112.133.233.141) 25.140000ms referer=https://hub.gke2.mybinder.org/user/ra5hid-pm-9nine-n2kguemb/notebooks/chemque.ipynb
+[W 10:28:44.454 NotebookApp] 400 GET /user/ra5hid-pm-9nine-n2kguemb/api/contents/chemque.ipynb?type=notebook&_=1622543400297 (112.133.233.141): Unreadable Notebook: /home/jovyan/chemque.ipynb FileNotFoundError(2, 'No such file or directory')
+[W 10:28:44.455 NotebookApp] Unreadable Notebook: /home/jovyan/chemque.ipynb FileNotFoundError(2, 'No such file or directory')
+[W 10:28:44.456 NotebookApp] 400 GET /user/ra5hid-pm-9nine-n2kguemb/api/contents/chemque.ipynb?type=notebook&_=1622543400297 (112.133.233.141) 8.050000ms referer=https://hub.gke2.mybinder.org/user/ra5hid-pm-9nine-n2kguemb/notebooks/chemque.ipynb
+[I 10:29:24.776 NotebookApp] Saving file at /chemque.ipynb
+[W 10:29:25.003 NotebookApp] Notebook chemque.ipynb is not trusted
+[E 10:29:25.043 NotebookApp] Error while saving file: chemque.ipynb [Errno 2] No such file or directory: '/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbformat.v4.4.schema.json'
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/filemanager.py", line 477, in save
+        self._save_notebook(os_path, nb)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/fileio.py", line 291, in _save_notebook
+        nbformat.write(nb, f, version=nbformat.NO_CONVERT)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/__init__.py", line 164, in write
+        return write(nb, f, version=version, **kwargs)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/__init__.py", line 107, in writes
+        try:
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 270, in validate
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 303, in iter_validate
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 57, in get_validator
+        version = current_nbformat
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 94, in _get_schema_json
+        def _get_schema_json(v):
+    FileNotFoundError: [Errno 2] No such file or directory: '/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbformat.v4.4.schema.json'
+[W 10:29:25.249 NotebookApp] 500 PUT /user/ra5hid-pm-9nine-n2kguemb/api/contents/chemque.ipynb (112.133.233.141): Unexpected error while saving file: chemque.ipynb [Errno 2] No such file or directory: '/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbformat.v4.4.schema.json'
+[W 10:29:25.288 NotebookApp] Unexpected error while saving file: chemque.ipynb [Errno 2] No such file or directory: '/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbformat.v4.4.schema.json'
+[E 10:29:25.289 NotebookApp] {
+      "Cookie": "username-hub-gke2-mybinder-org=\"2|1:0|10:1622541137|30:username-hub-gke2-mybinder-org|44:MTJmOWUyZWExYzkwNDQzMThhZmE0Yjg3OWUxYjM3MTI=|df629aa59eee7f98686d68caf2f6622e9aeea811abd9d62afd76c74e5c161f59\"; _xsrf=2|0b2de71d|c1789b70b7d2fdfebbc0ece59fffdd6d|1621249344",
+      "Referer": "https://hub.gke2.mybinder.org/user/ra5hid-pm-9nine-n2kguemb/tree",
+      "Origin": "https://hub.gke2.mybinder.org",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|0b2de71d|c1789b70b7d2fdfebbc0ece59fffdd6d|1621249344",
+      "Content-Type": "application/json",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.5",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0",
+      "Content-Length": "8109",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub.gke2.mybinder.org",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "112.133.233.141,::ffff:10.0.14.6",
+      "X-Real-Ip": "112.133.233.141",
+      "X-Request-Id": "ef1b3f35cdd731d9c69762140185787b",
+      "Host": "hub.gke2.mybinder.org",
+      "Connection": "close"
+    }
+[E 10:29:25.289 NotebookApp] 500 PUT /user/ra5hid-pm-9nine-n2kguemb/api/contents/chemque.ipynb (112.133.233.141) 546.410000ms referer=https://hub.gke2.mybinder.org/user/ra5hid-pm-9nine-n2kguemb/tree
+[W 10:30:14.573 NotebookApp] 400 GET /user/ra5hid-pm-9nine-n2kguemb/api/contents/chemque.ipynb?type=notebook&_=1622543490445 (112.133.233.141): Unreadable Notebook: /home/jovyan/chemque.ipynb FileNotFoundError(2, 'No such file or directory')
+[W 10:30:14.574 NotebookApp] Unreadable Notebook: /home/jovyan/chemque.ipynb FileNotFoundError(2, 'No such file or directory')
+[W 10:30:14.575 NotebookApp] 400 GET /user/ra5hid-pm-9nine-n2kguemb/api/contents/chemque.ipynb?type=notebook&_=1622543490445 (112.133.233.141) 5.310000ms referer=https://hub.gke2.mybinder.org/user/ra5hid-pm-9nine-n2kguemb/notebooks/chemque.ipynb
