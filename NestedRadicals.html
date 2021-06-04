@@ -14331,6 +14331,11 @@ we begin from $\sqrt{a}$</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr style="height:2px;border-width:0;color:gray;background-color:red"/>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="2.-Solve-$\sqrt[3]{a\sqrt[3]{a\sqrt[3]{a}}...}$">2. Solve $\sqrt[3]{a\sqrt[3]{a\sqrt[3]{a}}...}$<a class="anchor-link" href="#2.-Solve-$\sqrt[3]{a\sqrt[3]{a\sqrt[3]{a}}...}$">&#182;</a></h2>
 </div>
 </div>
@@ -14412,6 +14417,78 @@ $\sqrt[3]{a\sqrt[3]{a\sqrt[3]{a}}...}$ with n nests = $ = \frac{{{3^n}-1}}{{2} \
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>$\sqrt[3]{a\sqrt[3]{a\sqrt[3]{a}}...}$ with $\infty$ nests $= \sqrt{a}$</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr style="height:2px;border-width:0;color:gray;background-color:red"/>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="3.-Solve-$\sqrt[x]{a\sqrt[x]{a\sqrt[x]{a}}...}$">3. Solve $\sqrt[x]{a\sqrt[x]{a\sqrt[x]{a}}...}$<a class="anchor-link" href="#3.-Solve-$\sqrt[x]{a\sqrt[x]{a\sqrt[x]{a}}...}$">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>To find out solution of such nested radicals, we begin from $\sqrt[x]{a}$</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>since $\sqrt[x]{a} = {a^\frac{1}{x}}$</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>and $ a\sqrt[x]{a} = a({a^\frac{1}{x}}) = {a^{\frac{1}{x}+1}} = {a^{\frac{x+1}{x}}} $</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>and $ \sqrt[x]{a\sqrt[x]{a}} = \sqrt[x]{a({a^\frac{x+1}{n}})} = ({a^{\frac{x+1}{x}}})^\frac{1}{x} = {a^{\frac{x+1}{x^2}}} $</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>similarly, $\sqrt[x]{a\sqrt[x]{a\sqrt[x]{a}}} =  ({a^{\frac{x^2 +x +1}{x^2}}})^\frac{1}{x} = {a^{\frac{x^2 +x +1}{x^3}}} $</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>So, we find that with each repeatation of the nest of radicals, the index is following a pattern, 
+ $\frac{1}{x}$ ,  $\frac{x+1}{x}$ , $\frac{x^2+x+1}{x^3}$ , $\frac{x^3+x^2+x+1}{x^4}$</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>So the ${n{^{th}}}$ term will be $\frac{x^{n-1}+ x^{n-2}+...+x^2+x+1}{x^n} = \frac{1-x^{n}}{x^{n} (1-x)}$</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Therefore, <br>
+$\sqrt[x]{a\sqrt[x]{a\sqrt[x]{a}}...} $ with n nests $= a^\frac{1-x^{n}}{x^{n} (1-x)}$</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>as a corollary, when $n = \infty$, we have $\frac{1-x^{n}}{x^{n} (1-x)} = \frac{1-x^{\infty}}{x^{\infty} (1-x)} = \frac{1}{x-1}$, so,</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>$\sqrt[x]{a\sqrt[x]{a\sqrt[x]{a}}...} $ with $\infty$ nests $= a^{\frac{1}{x-1}}$</p>
 
 </div>
 </div>
